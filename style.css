@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/*
+font-family: 'Outfit', sans-serif;
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-shadow {
+  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  border-radius: 4rem;
+  background: linear-gradient(#0C172966 0%, #0C1729ee 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+  border-radius: 1rem;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.nft {
+  display: block;
+  width: 200%;
+  border-radius: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  opacity: 0;
+  width: 200%;
+  border-radius: 1rem;
+  background-color: hsl(178, 100%, 50%, 50%);
+  transition: opacity .5s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  width: 190px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p {
+  padding-top: 20px;
+  color: hsl(215, 51%, 80%, 90%);
+  font-weight: 300;
+  font-size: 18px;
+  width: 320px;
+}
+
+.ETH {
+  padding-top: 20px;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 18px;
+  margin-top: -22px;
+}
+
+.CLOCK {
+  float: right;
+  margin-right: 75px;
+  margin-top: -22px;
+  width: 1.2rem;
+}
+
+.time {
+  float: right;
+  color: hsl(215, 51%, 80%, 90%);
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: -22px;
+}
+
+.line {
+  margin-top: 25px;
+  background-color: hsl(215, 32%, 27%);
+  height: 1px;
+  width: 100%;
+}
+
+.avatar {
+  margin-top: 25px;
+  width: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.copyright {
+  font-size: 16px;
+  margin-left: 50px;
+  margin-top: -50px;
+}
+
+.copyright > span {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.copyright > span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 5px;
+}
